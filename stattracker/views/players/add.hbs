@@ -1,0 +1,54 @@
+<h1 id="addPlayer">
+  Add A Player
+</h1>
+<body id="addPlayerForm">
+  <form method="POST" encType="multipart/form-data">
+    {{! Input names have to match the name of the fields in the mongo schema object }}
+    {{! Mapping is not automatic, but it's best practices }}
+    <div id="addPlayerDiv">
+      <fieldset>
+        <label for="name" class="col-2">
+          Player Name:
+        </label>
+        <input name="name" id="name" required />
+      </fieldset>
+      <fieldset>
+        <label for="height" class="col-2">
+          Height:
+        </label>
+        <input name="height" id="height" required type="String" />
+      </fieldset>
+      <fieldset>
+        <label for="pointPGame" class="col-2">
+          Points Per Game:
+        </label>
+        <input name="pointPGame" id="pointPGame" required />
+      </fieldset>
+      <fieldset>
+         <label for="playerImage" >
+          Player Image:
+        </label>
+        <input type="file" name="playerImage" />
+
+      </fieldset>
+      <fieldset>
+        <label for="team" class="col-2">
+          Team:
+        </label>
+        <select name="team" id="team">
+          {{#each teams}}
+            <option>{{this.name}}</option>
+          {{/each}}
+        </select>
+      </fieldset>
+
+    </div>
+
+    <div id="addPBtn">
+      <button class="btn btn-primary">
+        Save
+      </button>
+    </div>
+
+  </form>
+</body>

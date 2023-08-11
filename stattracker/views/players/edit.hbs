@@ -1,0 +1,44 @@
+<h1>
+  {{title}}
+</h1>
+<form method="POST">
+  {{! Input names have to match the name of the fields in the mongo schema object }}
+  {{! Mapping is not automatic, but it's best practices }}
+  <div id="addPlayerDiv">
+    <fieldset>
+      <label for="name" class="col-2">
+        Player Name:
+      </label>
+      <input name="name" id="name"  value="{{player.name}}" />
+    </fieldset>
+    <fieldset>
+      <label for="height" class="col-2">
+        Height:
+      </label>
+      <input name="height" id="height" required type="String" value="{{player.height}}"/>
+    </fieldset>
+    <fieldset>
+      <label for="pointPGame" class="col-2">
+        Points Per Game:
+      </label>
+      <input name="pointPGame" id="pointPGame" required value="{{player.pointPGame}}"/>
+    </fieldset>
+    <fieldset>
+      <label for="team" class="col-2">
+        Team:
+      </label>
+      <select name="team" id="team">
+        {{#each teams}}
+          {{!-- {{createOption this.name ../player.name}} --}}
+          {{createOption this.name ../player.team}}
+        {{/each}}
+      </select>
+    </fieldset>
+  </div>
+
+  {{! No need to specify Status since it has a default value }}
+  {{! Button needs to be inside <form> element to trigger POST }}
+  <button class="offset-3 btn btn-primary">
+    Save
+  </button>
+</form>

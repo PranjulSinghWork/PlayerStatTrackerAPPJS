@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    height: 100vh; 
+    background-image: url('https://i.pinimg.com/originals/d7/9c/8e/d79c8ef6885ea35a1753a00216856aac.jpg'); 
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+#introPara{
+   color: white;
+   font-family: monospace;
+   width: 900px;
+   text-decoration: underline;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+#seeMore{
+    text-align: center;
+}
+

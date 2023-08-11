@@ -1,0 +1,110 @@
+body {
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+
+input{
+  padding:10px;
+  border:0px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-bottom:1px solid #eee;
+  
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+#addTeamBtn{
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#table-body{
+  margin: 0;
+  height: 100vh; 
+  background-image: url('https://wallpaperaccess.com/full/103106.jpg'); 
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+#table-body > table {
+  width: 900px;
+  margin: 0 auto;
+}
+
+th {
+  height: 70px;
+}
+#addTeamBtn{
+  text-align: center;
+}
+#team-table{
+  margin: 0;
+  height: 100vh; 
+  background-image: url('https://queenballers.club/_next/image?url=https%3A%2F%2Fi0.wp.com%2Fqueenballers.wpcomstaging.com%2Fwp-content%2Fuploads%2F2020%2F12%2FHow-many-WNBA-teams-are-there-Queen-Ballers-Club.png%3Ffit%3D3000%252C1570%26ssl%3D1&w=3840&q=25'); 
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+#addTeamBtn{
+  text-align: center;
+}
+#team-table > table{
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+#addPlayerDiv{
+  text-align: center;
+  font-size: larger;
+
+  font-family: fantasy;
+
+  color: white;
+}
+#addPlayer{
+  text-align: center;
+  font-family: monospace;
+  color: white;
+}
+#addPBtn{
+  text-align: center;
+  margin-top: 5px;
+
+}
+#addPlayerForm{
+  margin: 0;
+  height: 100vh; 
+  background-image: url('https://wallpapercave.com/wp/wp6363675.jpg'); 
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+#newTeam{
+  margin: 0;
+  height: 100vh; 
+  background-image: url('https://wallpaperaccess.com/full/2525706.jpg'); 
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+}
+#saveBtn{
+  margin-top: 5px;
+  text-align: center;
+}

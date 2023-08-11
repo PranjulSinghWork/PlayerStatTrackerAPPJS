@@ -1,0 +1,44 @@
+
+
+{{#if user}}
+<div id="addTeamBtn">
+  <a href="/players/add"  class="btn btn-primary ">Add a Player</a>
+</div>
+
+{{/if}}
+<body id="table-body">
+  <table class="table table-dark table-hover ">
+  <thead>
+    <th></th>
+    <th>Player Name</th>
+    <th>Height</th>
+    <th>Points Per Game</th>
+    <th>Team</th>
+    <th></th>
+  </thead>
+  <tbody>
+    {{#each dataset}}
+      <tr>
+        <td>
+          <img src="{{this.imageUrl}}" alt="{{this.name}}" style="max-width: 50px; max-height: 50px;" /> <!-- Image tag for the player's image. You can adjust the styling as needed. -->
+        </td>
+        <td>{{this.name}}</td>
+        <td>{{this.height}}</td>
+        <td>{{this.pointPGame}}</td>
+        <td>{{this.team}}</td>
+        
+        {{#if ../user}}
+        <td>
+          <a href="/players/edit/{{this._id}}" class="btn btn-primary">Edit</a>
+          <a
+            href="/players/delete/{{this._id}}"
+            class="btn btn-danger"
+            onclick="return confirmDeletion();"
+          >Delete</a>
+        </td>
+        {{/if}}
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+</body>
